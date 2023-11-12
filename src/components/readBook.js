@@ -46,10 +46,10 @@ const ReadBook = () => {
   const topics = [
     'Be more knowledgeable',
     'Be more successful',
-    'Be healthier',
     'Be a better parent',
-    'Be happier',
     'Be your best self!',
+    'Be healthier',
+    'Be happier',
   ];
 
   useEffect(() => {
@@ -118,6 +118,8 @@ const ReadBook = () => {
                         color: '#00000',
                       },
                       fontSize: { lg: '28px', md: '20px', sm: '16px', xs: '12px' },
+                      textAlign: { lg: 'left', md: 'left', sm: 'left', xs: 'left' },
+                      paddingLeft: { lg: '0px', md: '0px', sm: '90px', xs: '90px' },
                     }}
                   >
                     {topic}
@@ -128,15 +130,16 @@ const ReadBook = () => {
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#277BC1",
+                backgroundColor: "#0ea5e9",
                 textTransform: "capitalize",
                 color: "#fff",
                 borderRadius: "40px",
                 fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
                 paddingX: { lg: "30px", md: "25px", sm: "25px", xs: "0px" },
                 margin: { xs: "30px 0px", md: "60px 0px", lg: "68px 0px" },
+                padding: { xs: "10px 30px", md: "10px 30px"},
                 width: {
-                  xs: "100%",
+                  xs: "auto",
                   lg: "fit-content",
                   md: "fit-content",
                   sm: "fit-content",

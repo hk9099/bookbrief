@@ -15,7 +15,7 @@ const Footer = () => {
                         <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
                             <Button
                                 sx={{
-                                    my: 2, color: "#277BC1", display: 'flex', textTransform: "capitalize",
+                                    my: 2, color: "#0ea5e9", display: 'flex', textTransform: "capitalize",
                                     fontSize: { lg: "18px", md: "16px", sm: "16px", xs: "14px" },
                                     marginTop: { lg: "24px", md: "24px", sm: "16px", xs: "10px" },
                                     justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" }, alignItems: "center",

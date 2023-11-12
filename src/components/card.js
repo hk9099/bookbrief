@@ -57,9 +57,6 @@ const card = () => {
                                 <Typography gutterBottom className='card-title' >
                                     {item.title}
                                 </Typography>
-                                {/* <Typography className='card-text' >
-                                    {item.text}
-                                </Typography> */}
                             </Box>
                         </Grid>
                     ))}

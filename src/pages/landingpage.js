@@ -20,7 +20,7 @@ const Landingpage = () => {
             <ReadBook />
             <SaveTime />
             <Card />
-            <Review />
+            {/* <Review /> */}
             <Popular />
             <Footer />
         </>

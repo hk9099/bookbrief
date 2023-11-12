@@ -23,7 +23,7 @@ const savetime = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <div className='save_box'>
-                            <Grid sx={{ zIndex: "99", position: "absolute", left: { xs: "260px", sm: "95px", lg: "122px" }, top: { xs: "-40px", sm: "390px", lg: "337px" } }}>
+                            <Grid sx={{ zIndex: "99", position: "absolute", left: { xs: "260px", sm: "95px", lg: "122px" }, top: { xs: "-40px", sm: "390px", lg: "280px" } }}>
                                 <img src={require("../asset/images/red_book.png")} className=' save_img_red' alt="save-img" />
                             </Grid>
                             <Typography sx={{ fontWeight: "600", xs: { fontSize: "20px" }, md: { fontSize: "20px" }, lg: { fontSize: "26px", fontWeight: "600", padding: "10px 0" } }}>Learn New Things</Typography>

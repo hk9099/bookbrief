@@ -1,10 +1,12 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* header */
 .ragister_btn {
   border-radius: 40px !important;
   background-color: #fff !important;
-  color: #277bc1 !important;
+  color: #0ea5e9 !important;
   text-transform: capitalize !important;
   font-size: 18px !important;
   font-weight: 600 !important;
@@ -20,7 +22,7 @@
 }
 .Sidebar_ragister_btn {
   border-radius: 40px !important;
-  background-color: #277bc1 !important;
+  background-color: #0ea5e9 !important;
   color: #fff !important;
   text-transform: capitalize !important;
   font-size: 14px !important;
@@ -59,11 +61,11 @@ body {
   transform: rotate(-90deg);
   padding: 73px 0px;
   margin-left: -68px;
-  color: #277bc1;
+  color: #0ea5e9;
   font-weight: 500;
 }
 .banner_heading {
-  color: #277bc1;
+  color: #0ea5e9;
   font-weight: 500;
   font-size: 60px;
   padding: 5px;
@@ -147,7 +149,7 @@ body {
 }
 
 .review-title span {
-  color: #277bc1;
+  color: #0ea5e9;
 }
 
 .review-box {
@@ -211,7 +213,7 @@ body {
   font-size: 18px;
 }
 .footer-copyright span {
-  color: #277bc1;
+  color: #0ea5e9;
 }
 .footer-copyright svg {
   font-size: 28px;
@@ -381,7 +383,7 @@ body {
     color: #505863;
   }
   .ragister_btn {   
-    background-color: #277bc1 !important;
+    background-color: #0ea5e9 !important;
     color: #fff !important;
   }
 }
@@ -397,7 +399,7 @@ body {
     width: 65%;
   }
   .ragister_btn {   
-    background-color: #277bc1 !important;
+    background-color: #0ea5e9 !important;
     color: #fff !important;
   }
 }
@@ -407,7 +409,7 @@ body {
     padding-left: 0;
   }
   .ragister_btn {   
-    background-color: #277bc1 !important;
+    background-color: #0ea5e9 !important;
     color: #fff !important;
     font-size: 14px !important;
   }
@@ -427,7 +429,7 @@ body {
     color: #505863;
   }
   .ragister_btn {   
-    background-color: #277bc1 !important;
+    background-color: #0ea5e9 !important;
     color: #fff !important;
     font-size: 12px !important;
   }
@@ -447,7 +449,7 @@ body {
     color: #505863;
   }
   .ragister_btn {   
-    background-color: #277bc1 !important;
+    background-color: #0ea5e9 !important;
     color: #fff !important;
     font-size: 10px !important;
   }
@@ -466,7 +468,7 @@ body {
     color: #505863;
   }
   .ragister_btn {   
-    background-color: #277bc1 !important;
+    background-color: #0ea5e9 !important;
     color: #fff !important;
   }
 }

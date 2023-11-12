@@ -62,7 +62,7 @@ const Review = () => {
                     </Grid>
                 </Grid>
             </Container>
-            <Grid sx={{ backgroundColor: "#277BC1", textAlign: "center" }}>
+            <Grid sx={{ backgroundColor: "#0ea5e9", textAlign: "center" }}>
                 <Container>
                     <Typography className='review-title' sx={{
                         fontSize: { xs: "28px", sm: "30px", md: "40px", lg: "60px" },
