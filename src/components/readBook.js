@@ -65,10 +65,10 @@ const ReadBook = () => {
 
   return (
     <Grid
-      sx={{ marginTop: { lg: "790px", md: "560px", sm: "515px", xs: "445px" } }}
+      sx={{ marginTop: { xl: "900px", lg: "800px", md: "560px", sm: "515px", xs: "445px" } }}
     >
       <Container>
-        <Grid container spacing={2} sx={{ marginBottom: "100px" }}>
+        <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
           <Grid
             item
             xs={12}
@@ -85,14 +85,14 @@ const ReadBook = () => {
               className="review-title"
               sx={{
                 fontSize: { xs: "15px", sm: "30px", md: "20px", lg: "30px" },
-                paddingBottom: "45px",
+                paddingBottom: "20px",
                 marginTop: "10px",
               }}
             >
-              Don't Spend Extra Time On Learning. 
+              Don't Spend Extra Time On Learning.
               <br /> We Know You Don't Have It.
             </Typography>
-            <Typography
+            <div
               sx={{
                 paddingRight: { lg: '75px', md: '55px', sm: '0px', xs: '0px' },
                 display: { lg: 'flex', md: 'flex', sm: 'none', xs: 'none' },
@@ -107,19 +107,24 @@ const ReadBook = () => {
                   <Typography
                     key={index}
                     className="rotating-headers__header"
+                    style={{
+                      fontWeight: 'bolder',
+                      fontFamily: 'system-ui',
+                    }}
                     sx={{
                       opacity: index === currentTopicIndex ? 1 : 0.5,
                       transition: 'all 0.5s ease-in-out',
                       '&:hover': {
-                        color: '#00000', 
+                        color: '#00000',
                       },
+                      fontSize: { lg: '28px', md: '20px', sm: '16px', xs: '12px' },
                     }}
                   >
                     {topic}
                   </Typography>
                 ))}
               </div>
-            </Typography>
+            </div>
             <Button
               variant="contained"
               sx={{
@@ -192,7 +197,7 @@ const ReadBook = () => {
           sx={{ display: { lg: "none", md: "none", sm: "block", xs: "block" } }}
         >
           <Swiper
-            modules={[Navigation , FreeMode]}
+            modules={[Navigation, FreeMode]}
             slidesPerView={2}
             navigation
             onSwiper={(swiper) => console.log(swiper)}
@@ -215,19 +220,11 @@ const ReadBook = () => {
                 slidesPerView: 3,
                 spaceBetween: 20,
               },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-              },
             }}
           >
             {popularData.map((imageUrl, index) => (
-              <SwiperSlide key={index}>
-                <img src={imageUrl.img} alt="image"  />
+              <SwiperSlide key={index} style={{ textAlign: "center" }}>
+                <img src={imageUrl.img} alt="image" />
               </SwiperSlide>
             ))}
           </Swiper>

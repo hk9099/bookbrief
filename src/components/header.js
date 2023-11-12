@@ -25,10 +25,12 @@ const Header = () => {
         setMobileOpen((prevState) => !prevState);
     };
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Box >
-                <img src={logo} width={"160px"} />
-            </Box>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',position: 'relative' }}>
+            
+                <img src={logo} width={"160px"} 
+                sx={{ position: 'relative' }}
+                />
+            
             <Divider />
            
             <div>
@@ -43,12 +45,12 @@ const Header = () => {
         }}>
             <Container  >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <div>
-                        <Box ><img src={logo} className='logo' /></Box>
+                    <div style={{position: "relative", zIndex: "99" ,marginLeft: "10px"}}>
+                                            <Box ><img src={logo} className='logo' /></Box>
                     </div>
                     <div>
                         <Box >
-                            <Button className='ragister_btn' onClick={handleStartReadingClick} >Start Reading</Button>
+                            <Button className='ragister_btn' onClick={handleStartReadingClick} >Start&nbsp;Reading</Button>
                         </Box>
                     </div>
                 </div>
