@@ -40,7 +40,9 @@ const card = () => {
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac."
         },
     ];
-
+    const handleButtonClick = () => {
+        window.location.href = 'https://library.thebookbrief.com';
+      };
     return (
         <Grid className='card'>
             <Container>
@@ -61,7 +63,7 @@ const card = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <Button variant="contained" className='card-btn' sx={{
+                <Button variant="contained" className='card-btn' onClick={handleButtonClick} sx={{
                     fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
                     margin: { xs: "30px 0px", md: "60px 0px", lg: "68px 0px", }, width: { xs: "100%",lg:"fit-content",md:"fit-content",sm:"fit-content" }
                 }}>Show All Categories</Button>

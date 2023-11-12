@@ -41,6 +41,9 @@ const ReadBook = () => {
       text: "10 Days to Faster Reading",
     },
   ];
+  const handleButtonClick = () => {
+    window.location.href = 'https://library.thebookbrief.com';
+  };
   const [currentTopicIndex, setCurrentTopicIndex] = useState(0);
 
   const topics = [
@@ -132,8 +135,8 @@ const ReadBook = () => {
                 ))}
               </div>
             </div>
-            <Button
-              variant="contained"
+            {/* <Button
+             
               sx={{
                 backgroundColor: "#0ea5e9",
                 textTransform: "capitalize",
@@ -152,7 +155,11 @@ const ReadBook = () => {
               }}
             >
               Explore All Summaries
-            </Button>
+            </Button> */}
+            <Button variant="contained" className='card-btn'  onClick={handleButtonClick}  sx={{
+                    fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+                    margin: { xs: "30px 0px", md: "60px 0px", lg: "68px 0px", }, width: { xs: "100%",lg:"fit-content",md:"fit-content",sm:"fit-content" }
+                }}>Explore All Categories</Button>
           </Grid>
           <Grid
             item
