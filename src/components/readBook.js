@@ -80,13 +80,18 @@ const ReadBook = () => {
               
             }}
           >
-            <img src={ReadBooklogo} className="book-logo md:w-max	" />
+            <img src={ReadBooklogo} className="book-logo 	"
+              style={{
+                display: { lg: "none", md: "none", sm: "none", xs: "none" },
+              }}
+             />
                         <Typography
               className="review-title"
               sx={{
                 fontSize: { xs: "15px", sm: "30px", md: "20px", lg: "30px" },
                 paddingBottom: "20px",
                 marginTop: "10px",
+                
               }}
             >
               Don't Spend Extra Time On Learning.

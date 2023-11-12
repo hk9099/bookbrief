@@ -1,4 +1,4 @@
-import { Grid, Container, Typography, Button } from '@mui/material'; import React from 'react'
+import { Grid, Container, Typography } from '@mui/material'; import React from 'react'
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
@@ -27,6 +27,7 @@ const Banner = () => {
                             </Grid>
                         </Grid>
                         <Typography variant="h6" className="banner_desc">On New Year Resolution Join Us and Access 1000+ book summaries from the world's best authors.</Typography>
+                        <div className='w-full flex align-center justify-center' style={{ marginTop: "20px" }}>
                         <Paper
                             component="form"
                             className='searchbar'
@@ -38,15 +39,16 @@ const Banner = () => {
                                 placeholder="Search books.."
                                 inputProps={{ 'aria-label': 'search books..' }}
                                 onClick={() => {
-                                    window.location.replace('https://library.thebookbrief.com');
+                                    window.location.href = 'https://library.thebookbrief.com';
                                 }}
                             />
                             <IconButton type="button" sx={{ p: '10px' }} aria-label="search" onClick={() => {
-                                window.location.replace('https://library.thebookbrief.com');
+                                window.location.href = 'https://library.thebookbrief.com';
                             }}>
                                 <SearchIcon />
                             </IconButton>
                         </Paper>
+                        </div>
                     </Grid>
                 </div>
                 <div className='lg:w-1/2 md:w-full flex align-center justify-center '>

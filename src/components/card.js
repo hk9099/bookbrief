@@ -44,7 +44,7 @@ const card = () => {
     return (
         <Grid className='card'>
             <Container>
-                <Typography variant="h3" gutterBottom sx={{ textAlign:{lg: 'left',md:"left",sm:"center",xs:"center"}, paddingY: { lg: "75px", sm: "30px", xs: "20px" }, fontWeight: "600", fontSize: { xs: "30px", md: "40px", lg: "50px" } }}>
+                <Typography variant="h3" gutterBottom sx={{ textAlign:{lg: 'left',md:"left",sm:"center",xs:"center"}, paddingY: { lg: "40px", sm: "30px", xs: "20px" }, fontWeight: "600", fontSize: { xs: "30px", md: "40px", lg: "50px" } }}>
                 What are you interested in?
                 </Typography>
                 <Grid container spacing={2}>

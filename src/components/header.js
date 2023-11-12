@@ -24,6 +24,9 @@ const Header = () => {
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
+    const handleButtonClick = () => {
+        window.location.href = 'https://library.thebookbrief.com';
+      };
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',position: 'relative' }}>
             
@@ -34,7 +37,7 @@ const Header = () => {
             <Divider />
            
             <div>
-                <Button className='Sidebar_ragister_btn'>Start Reading</Button>
+                <Button className='Sidebar_ragister_btn' onClick={handleButtonClick} >Start Reading</Button>
             </div>
             
         </Box>

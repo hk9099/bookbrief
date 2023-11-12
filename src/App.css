@@ -1,12 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* header */
 .ragister_btn {
   border-radius: 40px !important;
-  background-color: #fff !important;
-  color: #0ea5e9 !important;
+  background-color: #0ea5e9 !important;
+  color: #fff !important;
   text-transform: capitalize !important;
   font-size: 18px !important;
   font-weight: 600 !important;
@@ -31,6 +28,9 @@
   margin-top: 15px !important;
   z-index: 99;
   text-align: center;
+}
+.Sidebar_Footer_ragister_btn{
+  padding: 20px 40px;
 }
 .logo {
   width: 90%;
@@ -59,14 +59,16 @@ body {
   padding: 5px;
 }
 .banner_desc {
-  padding: 0 55px;
+  /* padding: 0 55px; */
   font-size: 20px !important;
   color: #505863;
+  width: 70%;
+  margin: auto!important;
 }
 .searchbar{
   border-radius: 30px !important;
   box-shadow: 0px 4px 29px 0px #928E8E40 !important;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 80%;
   max-width: 500px;
   /* margin: 0 auto; */
@@ -78,7 +80,7 @@ body {
 }
 /* save time */
 .savetime {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 .save_box {
   background-color: #f1f6f4;
@@ -93,8 +95,13 @@ body {
 
 .card-box {
   padding: 28px;
-  background-color: #fff;
+  background-color: #35b0e7a6;
   box-shadow: 0px 4px 20px 0px #65636340;
+  border-radius: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
 }
 
 .card-img {
@@ -105,7 +112,6 @@ body {
   height: 40px;
   padding: 6px;
   text-align: center;
-  margin-bottom: 26px;
 }
 
 .card-title {
@@ -113,7 +119,11 @@ body {
   font-weight: 500 !important;
   line-height: 30px;
   letter-spacing: 0.05em;
-  margin-bottom: 21px !important;
+  margin-left: 10px!important;
+  margin-bottom: 0!important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600!important;
+  color : #fff
 }
 
 .card-text {
@@ -128,6 +138,7 @@ body {
   border-radius: 40px !important;
   padding: 8px 50px !important;
   font-weight: 500 !important;
+  background-color: #0ea5e9!important;
 }
 
 /* /----------------------------------------------------review-----------------------------------------/ */
@@ -181,6 +192,7 @@ body {
   .book-logo {
     width: 95px;
     margin-left: -199px;
+    display: none;
   }
 }
 
@@ -188,6 +200,7 @@ body {
   .book-logo {
     width: 315px;
     margin-left: -15px;
+    display: none;
   }
 }
 /* -------------------------------------------------footer------------------------------------------------- */
@@ -332,7 +345,7 @@ body {
     font-size: 36px !important;
   }
   .banner_desc {
-    padding: 0 55px;
+    /* padding: 0 55px; */
     font-size: 15px !important;
     color: #505863;
   }
@@ -366,7 +379,7 @@ body {
     font-size: 40px;
   }
   .banner_desc {
-    padding: 0 55px;
+    /* padding: 0 55px; */
     font-size: 15px !important;
     color: #505863;
   }
@@ -412,7 +425,7 @@ body {
     font-size: 30px !important;
   }
   .banner_desc {
-    padding: 0 55px;
+    /* padding: 0 55px; */
     font-size: 15px !important;
     color: #505863;
   }
@@ -432,7 +445,7 @@ body {
     font-size: 30px !important;
   }
   .banner_desc {
-    padding: 0 55px;
+    /* padding: 0 55px; */
     font-size: 15px !important;
     color: #505863;
   }
@@ -451,7 +464,7 @@ body {
     font-size: 25px !important;
   }
   .banner_desc {
-    padding: 0 55px;
+    /* padding: 0 55px; */
     font-size: 12px !important;
     color: #505863;
   }
@@ -510,3 +523,13 @@ body {
     margin-top: 20px;
   }
 }
+
+
+.swiper-button-prev,.swiper-button-next{
+  left: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #0ea5e9!important;
+  right: 0;
+}
+
