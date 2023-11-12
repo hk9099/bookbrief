@@ -39,18 +39,6 @@
 body {
   overflow-x: hidden;
 }
-.banner {
-  background-image: url("./asset/images/banner.png");  
-    width: 100%;
-    height: 260%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    /* z-index: -1; */
-    top: 0px;
-    left: 1px;
-    margin-bottom: 40px;
-}
 .banner_content {
   position: absolute;
   top: 245px;
@@ -495,3 +483,30 @@ body {
   line-height: 1.2 !important;
 }
 
+/* .banner_img{
+  margin-top: 20px;
+} */
+
+@media (max-width: 900px) {
+  .banner_img{
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner_img{
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner_img{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner_img{
+    margin-top: 20px;
+  }
+}

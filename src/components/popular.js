@@ -8,6 +8,13 @@ import Book6 from '../asset/images/book6.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Navigation, FreeMode } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/free-mode';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Popular = () => {
     const popularData = [
@@ -56,13 +63,38 @@ const Popular = () => {
                     ))}
                 </Grid>
                 <Grid sx={{ display: { lg: "none", md: "none", sm: "block", xs: "block" }}}>
-                    <Slider {...settings}>
-                        {popularData.map((imageUrl, index) => (
-                            <div key={index}>
-                                <img src={imageUrl.img} alt="image" width="90%" />
-                            </div>
-                        ))}
-                    </Slider>
+                <Swiper
+            modules={[Navigation, FreeMode]}
+            slidesPerView={2}
+            navigation
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            className="mySwiper"
+            breakpoints={{
+              200: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              520: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            {popularData.map((imageUrl, index) => (
+              <SwiperSlide key={index} style={{ display:'flex' , justifyContent: 'center'}}>
+                <img src={imageUrl.img} alt="image" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
                 </Grid>
             </Container>
         </Grid>

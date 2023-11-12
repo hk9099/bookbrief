@@ -17,7 +17,7 @@ const Header = () => {
     const navigate = useNavigate(); 
     const handleStartReadingClick = () => {
         // Redirect the user to the signup page on the same tab.
-        window.location.replace('https://library.thebookbrief.com/signup');
+        window.location.replace('https://library.thebookbrief.com');
         // navigate('https://library.thebookbiref.com/signup', { replace: true });
     };
     const [mobileOpen, setMobileOpen] = React.useState(false);

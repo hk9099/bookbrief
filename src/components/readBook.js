@@ -65,7 +65,7 @@ const ReadBook = () => {
 
   return (
     <Grid
-      sx={{ marginTop: { xl: "900px", lg: "800px", md: "560px", sm: "515px", xs: "445px" } }}
+      // sx={{ marginTop: { xl: "50px", lg: "800px", md: "560px", sm: "515px", xs: "445px" } }}
     >
       <Container>
         <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
@@ -77,11 +77,11 @@ const ReadBook = () => {
             lg={6}
             sx={{
               textAlign: { lg: "left", md: "left", sm: "center", xs: "center" },
-              marginTop: "50px",
+              
             }}
           >
-            <img src={ReadBooklogo} className="book-logo" />
-            <Typography
+            <img src={ReadBooklogo} className="book-logo md:w-max	" />
+                        <Typography
               className="review-title"
               sx={{
                 fontSize: { xs: "15px", sm: "30px", md: "20px", lg: "30px" },
@@ -226,7 +226,7 @@ const ReadBook = () => {
             }}
           >
             {popularData.map((imageUrl, index) => (
-              <SwiperSlide key={index} style={{ textAlign: "center" }}>
+              <SwiperSlide key={index} style={{ display:'flex' , justifyContent: 'center'}}>
                 <img src={imageUrl.img} alt="image" />
               </SwiperSlide>
             ))}
