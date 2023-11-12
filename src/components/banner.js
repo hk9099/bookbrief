@@ -6,7 +6,8 @@ import SearchIcon from '@mui/icons-material/Search';
 const Banner = () => {
     return (
         <>
-            <Container style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" ,marginBottom:"50px"}}>
+            <Container style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" ,marginBottom:"50px", marginTop:"50px"}}>
+                <div className='mobilebanner '></div>
                 <div className='lg:w-1/2 md:w-full flex align-center justify-center'>
                     <Grid className="my-auto">
                         <Grid display="flex" alignItems="flex-end">

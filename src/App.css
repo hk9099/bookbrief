@@ -387,6 +387,17 @@ body {
     background-color: #0ea5e9 !important;
     color: #fff !important;
   }
+  .mobilebanner{
+    background-image: url("./asset/images/mobile_banner.png");
+    width: 100%;
+    height: 136%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 1px;
+  }
 }
 @media (max-width: 900px) {
   .logo {
